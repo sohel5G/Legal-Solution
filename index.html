@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600&display=swap"
         rel="stylesheet">
 
+    <!-- Fontawesome icons  -->
+    <script src="https://kit.fontawesome.com/33e76ad85d.js" crossorigin="anonymous"></script>
+
 
     <!-- Tailwind custom class  -->
     <script>
@@ -24,7 +27,7 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'primary-color': '#B68C5A',
                     }
                 }
             }
@@ -36,29 +39,203 @@
     <header class="bg-white">
         <div class="container mx-auto">
             <nav>
-                <div class="logo">
-                    <img src="./images/logo2.png" alt="main Logo">
+
+                <div class="navbar py-3">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <label tabindex="0"
+                                class="btn btn-ghost lg:hidden bg-primary-color text-white hover:bg-primary-color">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </label>
+                            <ul tabindex="0" class="menu menu-sm dropdown-content mt-5 z-[1] p-2 shadow bg-white w-52">
+
+                                <li class="mt-3"><a
+                                        class="hover:text-white hover:bg-primary-color font-normal text-base text-black font-Poppins"
+                                        href="#">Home</a></li>
+                                <li class="mt-3"><a
+                                        class="hover:text-white hover:bg-primary-color font-normal text-base text-black font-Poppins"
+                                        href="#">Services<i class="fa-solid fa-angle-right"></i></a></li>
+                                <li class="mt-3"><a
+                                        class="hover:text-white hover:bg-primary-color font-normal text-base text-black font-Poppins"
+                                        href="#">Cases<i class="fa-solid fa-angle-right"></i></a></li>
+                                <li class="mt-3"><a
+                                        class="hover:text-white hover:bg-primary-color font-normal text-base text-black font-Poppins"
+                                        href="#">Blog<i class="fa-solid fa-angle-right"></i></a></li>
+                                <li class="mt-3"><a
+                                        class="hover:text-white hover:bg-primary-color font-normal text-base text-black font-Poppins"
+                                        href="#">Contact Us<i class="fa-solid fa-angle-right"></i></a></li>
+
+                            </ul>
+                        </div>
+                        <a href="#"><img class="ml-4 lg:ml-0" src="./images/logo2.png" alt=""></a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+
+                            <li><a class="hover:text-white hover:bg-primary-color font-normal text-base text-black font-Poppins"
+                                    href="#">Home</a></li>
+                            <li><a class="hover:text-white hover:bg-primary-color font-normal text-base text-black font-Poppins"
+                                    href="#">Services<i class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a class="hover:text-white hover:bg-primary-color font-normal text-base text-black font-Poppins"
+                                    href="#">Cases<i class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a class="hover:text-white hover:bg-primary-color font-normal text-base text-black font-Poppins"
+                                    href="#">Blog<i class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a class="hover:text-white hover:bg-primary-color font-normal text-base text-black font-Poppins"
+                                    href="#">Contact Us<i class="fa-solid fa-angle-right"></i></a></li>
+
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <a
+                            class="btn bg-primary-color hover:bg-primary-color text-white border-0 font-Poppins normal-case text-base py-3 px-7">Free
+                            Consultation</a>
+                    </div>
                 </div>
-                <div class="navigation">
-                    <ul>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Cases</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="btn">
-                    <a href="">Free Consultation</a>
-                </div>
+
             </nav>
         </div>
     </header>
-    <main>
+    <main class="bg-white">
+        <!-- Banner section  -->
+        <section>
+            <div class="container mx-auto flex justify-center items-center text-center">
+
+
+                <div class="carousel w-full">
+                    <div id="slide1"
+                        class="carousel-item relative w-full bg-[url('./images/slider-1.jpg')] bg-cover bg-no-repeat bg-center-center min-h-[650px] flex justify-center items-center">
+                        <div>
+                            <h1 class="font-Garamond font-extrabold text-4xl lg:text-7xl text-white loading-[5rem]">We
+                                Provide Effective <br> Legal Solutions </h1>
+                            <p class="text-base text-white w-3/4 mx-auto my-10">There are many variations of passages of
+                                Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                                injected humour.</p>
+                            <div>
+                                <input type="text" placeholder="Search your services"
+                                    class=" text-white bg-white rounded-xl p-3 w-96 m-6">
+                                <input
+                                    class="btn bg-primary-color hover:bg-primary-color text-white border-0 font-Poppins normal-case text-base py-3 px-7"
+                                    type="submit" value="Search">
+                            </div>
+
+                            <div
+                                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide3" class="btn btn-circle bg-primary-color text-white hover:bg-white hover:text-black border-none">❮</a>
+                                <a href="#slide2" class="btn btn-circle bg-primary-color text-white hover:bg-white hover:text-black border-none">❯</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide2"
+                        class="carousel-item relative w-full bg-[url('./images/slider-2.jpg')] bg-cover bg-no-repeat bg-center-center min-h-[650px] flex justify-center items-center">
+
+
+                        <div>
+                            <h1 class="font-Garamond font-extrabold text-4xl lg:text-7xl text-white loading-[5rem]">We
+                                Provide Effective <br> Legal Solutions </h1>
+                            <p class="text-base text-white w-3/4 mx-auto my-10">There are many variations of passages of
+                                Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                                injected humour.</p>
+                            <div>
+                                <input type="text" placeholder="Search your services"
+                                    class=" text-white bg-white rounded-xl p-3 w-96 m-6">
+                                <input
+                                    class="btn bg-primary-color hover:bg-primary-color text-white border-0 font-Poppins normal-case text-base py-3 px-7"
+                                    type="submit" value="Search">
+                            </div>
+
+                            <div
+                                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide1" class="btn btn-circle bg-primary-color text-white hover:bg-white hover:text-black border-none">❮</a>
+                                <a href="#slide3" class="btn btn-circle bg-primary-color text-white hover:bg-white hover:text-black border-none">❯</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div id="slide3"
+                        class="carousel-item relative w-full bg-[url('./images/slider-3.jpg')] bg-cover bg-no-repeat bg-center-center min-h-[650px] flex justify-center items-center">
+
+
+                        <div>
+                            <h1 class="font-Garamond font-extrabold text-4xl lg:text-7xl text-white loading-[5rem]">We
+                                Provide Effective <br> Legal Solutions </h1>
+                            <p class="text-base text-white w-3/4 mx-auto my-10">There are many variations of passages of
+                                Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                                injected humour.</p>
+                            <div>
+                                <input type="text" placeholder="Search your services"
+                                    class=" text-white bg-white rounded-xl p-3 w-96 m-6">
+                                <input
+                                    class="btn bg-primary-color hover:bg-primary-color text-white border-0 font-Poppins normal-case text-base py-3 px-7"
+                                    type="submit" value="Search">
+                            </div>
+
+                            <div
+                                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide2" class="btn btn-circle bg-primary-color text-white hover:bg-white hover:text-black border-none">❮</a>
+                                <a href="#slide1" class="btn btn-circle bg-primary-color text-white hover:bg-white hover:text-black border-none">❯</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto">
+                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam dignissimos asperiores itaque, quis
+                    fugit animi quod dicta beatae voluptatum, unde culpa eius debitis eligendi sed aut, ex deserunt nisi
+                    sit veniam corporis. Doloribus itaque, corporis quaerat cupiditate id dolor deserunt iste!
+                    Accusantium consectetur est consequatur animi explicabo neque, culpa itaque! Porro cumque explicabo
+                    perspiciatis ratione fuga ipsum a ut hic! Et maiores laborum ipsam eligendi illo, obcaecati ducimus
+                    sint sapiente delectus, vitae illum cum doloribus incidunt quidem voluptatibus! Quibusdam error
+                    placeat ipsum distinctio ratione quidem impedit quasi omnis corporis aperiam expedita eveniet ut
+                    dignissimos reprehenderit sequi perferendis illo, doloremque provident blanditiis tenetur. Veritatis
+                    repellendus ut consectetur eos eveniet, aspernatur minima officia sint iusto possimus maiores,
+                    reprehenderit fuga quaerat similique harum omnis vel! Suscipit similique ratione sunt dolor cumque
+                    dicta doloribus tenetur eligendi adipisci eum obcaecati libero, fugit iste delectus quia
+                    perspiciatis quisquam nemo est. Recusandae voluptatem vel neque quam ullam. Minus commodi, culpa
+                    corrupti aspernatur cumque molestias excepturi vitae? Doloremque, quasi. Nulla sapiente esse facere
+                    quo qui distinctio deleniti cum aliquam molestiae magni, nam itaque illum eligendi laborum
+                    doloremque ipsum asperiores aperiam modi laudantium nostrum, accusamus laboriosam deserunt! Pariatur
+                    omnis nam assumenda dolorem officiis, exercitationem mollitia veritatis dignissimos. Earum explicabo
+                    recusandae maxime vel asperiores deserunt exercitationem perspiciatis quam inventore natus.
+                    Molestias magni cupiditate inventore tempora aperiam aliquid odit laborum dolorum provident
+                    reiciendis omnis nemo accusamus mollitia maiores cum quam, ex placeat iusto magnam deleniti
+                    accusantium doloribus non. Distinctio sunt minus odit modi voluptate iure quam, vel, consectetur
+                    recusandae consequuntur necessitatibus repellat corrupti minima, harum a. Rerum cupiditate
+                    necessitatibus, nihil et quam ipsum omnis optio excepturi. Amet porro totam inventore, quod
+                    similique doloribus. Vero, placeat dignissimos neque harum sapiente sunt quidem unde totam
+                    voluptates molestiae aspernatur fugit eius accusantium tempora soluta numquam odit quo nulla. Ad
+                    commodi debitis maiores praesentium exercitationem!</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto">
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto">
+
+            </div>
+        </section>
 
     </main>
     <footer>
+        <div class="container mx-auto">
 
+        </div>
     </footer>
 </body>
 
